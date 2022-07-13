@@ -6,6 +6,7 @@
       .hero-section {
         background-image: url("https://images.unsplash.com/photo-1542884748-2b87b36c6b90?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fGJsb29kJTIwZG9uYXRpb258ZW58MHx8MHx8&w=1000&q=80");
         background-size: cover;
+        background-position: center;
         position: relative;
         height: 100%;
       }
@@ -29,11 +30,11 @@
       }
       .hero-btn {
         background-color: var(--main-color);
-        padding: 10px 40px;
-        font-size: 16px;
+        padding: 10px 10px;
+        font-size: 14px;
         text-align: center;
         color: #0a0c1c;
-        margin-top: 70px;
+        margin-top: 30px;
         margin-bottom: 170px;
         border: none;
         height: 60px;
@@ -41,9 +42,9 @@
         font-weight: 700;
       }
       .hero-text-heading {
-        font-size: 100px;
+        font-size: 80px;
         font-weight: 700;
-        line-height: 100px;
+        line-height: 80px;
         color: white;
       }
       .hero-btn:hover {
@@ -72,10 +73,11 @@
       .services-section {
         background-image: url(/assets/images/service-bg.jpg);
         background-repeat: no-repeat;
+      
         background-size: cover;
         height: 100%;
-      
         padding: 0 0 160px 0;
+        
       }
       
       .service-card-title {
@@ -195,6 +197,7 @@
         opacity: 1;
       }
 
+      
 
 
 
@@ -242,30 +245,38 @@
     <div class="container-fluid">
       <div class="container">
         <div class="row">
-          <div class="col-md-7 group-text">
-            <h2 class="hero-text-heading">SAVE A LIFE</h2>
-            <hr class="horizontal-rule opacity-100" />
-            <h2 class="hero-text-heading">DONATE BLOOD</h2>
-            <hr class="horizontal-rule-2nd opacity-100" />
-            <h3 class="hero-text-heading-small">One point of blood can save a life</h3>
-            <Button class="hero-btn" style="color: white; background-color: red;">
-              DONATE NOW
-            </Button>
-            <div class="col-md-4" style="color: red;">
+          <div class="col-md-7 group-text" style="margin-top: 80px;">
+            <h2 class="hero-text-heading">Your blood donation mater</h2>
+          <hr class="horizontal-rule opacity-100" /> 
+            <h2 class="hero-text-heading">Give today</h2>
+            <!-- <hr class="horizontal-rule-2nd opacity-100" /> -->
+            <h3 class="hero-text-heading-small">One pint of blood can save a life</h3>
+            <!-- <Button class="hero-btn" style="color: white; background-color: red;border-radius: 10px;">DONATE NOW </Button> -->
+            <div class="col-md-4" style="color: red;font-size: 16px;" id="marquee" >
+              <div><Button class="hero-btn" style="color: white; background-color: red;border-radius: 10px;">DONATE NOW </Button></div>
               <h3>Emergency?<br>Call This Number</h3>
-              <marquee behavior="alternate" derection="up" scrollamount="1" id="marquee" style="font-size:x-large ;">:- 999 / 112 / 911</marquee>
+              <marquee behavior="alternate" derection="up" scrollamount="2" id="marquee" style="font-size:x-large ;">:- 999 / 112 / 911</marquee>
             </div>
           </div>
+          
         </div>
       </div>
     </div>
     <div class="circle"></div>
   </section>
 
+<<<<<<< HEAD
 <br><br><br><br><br><br>
 <body>
 <h1 style="text-align: center;padding-top: 2%;">WAYS TO HELP</h1>
   <section class="services-section" style="margin-top: 8%;" >
+=======
+<br><br><br><br><br>
+<body>
+
+  
+  <section class="services-section">
+>>>>>>> 968e2f3ede6ecbc90af6a613fca2991231ab086a
     <div class="container">
       <div class="row row-cols-1 row-cols-md-3 g-4">
         <div class="col">
@@ -273,20 +284,19 @@
             <div class="row">
               <div class="col-md-6">
                 <img src="https://thumbs.dreamstime.com/z/african-american-volunteer-group-19404483.jpg"
-                  class="card-img-top" alt="..." />
+                  class="card-img-top" alt="..." style="height: 170px;"/>
                 
               </div>
               <div class="col-md-6">
                 <img src="https://i.pinimg.com/736x/ca/ea/1d/caea1d562797dee2e08cc1a08641a51f.jpg" class="card-img-top"
-                  alt="..." />
+                  alt="..." style="height: 170px;"/>
   
               </div>
             </div>
             <div class="card-body">
               <h5 class="card-title service-card-title">Volunteer Team</h5>
               <p class="card-text service-card-text">
-                We can help you channel your potential implementing your idea. We
-                take care of all your needs, crafting specific.
+                Organize and participate in activities to celebrate World Blood Donor Day, promoting voluntary unpaid blood donation to the public, across government and to other sectors.
               </p>
             </div>
           </div>
@@ -295,12 +305,11 @@
           <div class="card service-card">
             <img
               src="https://nypost.com/wp-content/uploads/sites/2/2017/11/171128-charities-give-money-feature.jpg?quality=75&strip=all"
-              class="card-img-top" alt="..." />
+              class="card-img-top" alt="..." style="height: 170px;"/>
             <div class="card-body">
               <h5 class="card-title service-card-title">Donate Money</h5>
               <p class="card-text service-card-text">
-                We can help you channel your potential implementing your idea. We
-                take care of all your needs, crafting specific.
+                Donate today to support humanitarian work around Kenya. In times of crisis, we meet the urgent needs of women, men, young and the old.Your contribution can make a difference.
               </p>
             </div>
           </div>
@@ -308,12 +317,11 @@
         <div class="col">
           <div class="card service-card">
             <img src="https://options.co.uk/sites/default/files/styles/newsheaderimg/public/dsc_0379.jpg?itok=cESI1I4R"
-              class="card-img-top" alt="..." />
+              class="card-img-top" alt="..." style="height: 170px;"/>
             <div class="card-body">
-              <h5 class="card-title service-card-title">Participate in Donation Campaign</h5>
+              <h5 class="card-title service-card-title"> Donation Campaign</h5>
               <p class="card-text service-card-text">
-                We can help you channel your potential implementing your idea. We
-                , crafting specific.
+                Support the development of nationally coordinated blood transfusion services that provide equitable access to safe and quality assured blood transfusions for the whole populatio
               </p>
             </div>
           </div>
@@ -325,7 +333,7 @@
     </div>
   
 
-    <br><br><br><br><br>
+    <br><br><br><br>
 
     <section class="team-section">
       <div class="team-group-text">
@@ -385,8 +393,7 @@
               <div class="col-lg-4 col-md-6">
                 <h5 class="footer-head-links">Newsletter</h5>
                 <p class="small footer-text">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                  eiusmod tempor.
+                  Sign up for our latest news and updates
                 </p>
                 <form action="#">
                   <div class="input-group mb-3">
