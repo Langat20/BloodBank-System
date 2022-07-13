@@ -12,6 +12,8 @@ from blood import forms as bforms
 from blood import models as bmodels
 
 
+
+
 def patient_signup_view(request):
     userForm=forms.PatientUserForm()
     patientForm=forms.PatientForm()
