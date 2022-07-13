@@ -1,6 +1,5 @@
 from django.shortcuts import render,redirect,reverse
 from . import forms,models
-from django.db.models import Sum,Q
 from django.contrib.auth.models import Group
 from django.http import HttpResponseRedirect
 from django.contrib.auth.decorators import login_required,user_passes_test
@@ -10,6 +9,8 @@ from django.core.mail import send_mail
 from django.contrib.auth.models import User
 from blood import forms as bforms
 from blood import models as bmodels
+from django.contrib.auth import authenticate, login
+from django.contrib import messages
 
 
 def patient_signup_view(request):
@@ -31,6 +32,30 @@ def patient_signup_view(request):
             my_patient_group[0].user_set.add(user)
         return HttpResponseRedirect('patientlogin')
     return render(request,'patient/patientsignup.html',context=mydict)
+
+
+
+def loginpage(request):
+    if request.user.is_authenticated:
+        return redirect('home')
+    else:
+        if request.method == 'POST':
+            username = request.POST.get('username')
+            password =request.POST.get('password')
+
+            user = authenticate(username=username, password=password)
+
+            if user is not None:
+                login(request,user)
+                return redirect('home')
+
+            else:
+                messages.info(request, 'Username OR password is incorrect')
+
+    return render(request,'login.html')
+
+
+
 
 def patient_dashboard_view(request):
     patient= models.Patient.objects.get(user_id=request.user.id)
