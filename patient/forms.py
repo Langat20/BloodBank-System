@@ -16,7 +16,11 @@ class PatientForm(forms.ModelForm):
     class Meta:
         model=models.Patient
 <<<<<<< HEAD
+<<<<<<< HEAD
         fields=['age','bloodgroup','disease','emailaddress','doctorname','mobile','profile_pic']
 =======
         fields=['age','bloodgroup','disease','address','doctorname','mobile','image']
 >>>>>>> 968e2f3ede6ecbc90af6a613fca2991231ab086a
+=======
+        fields=['age','bloodgroup','disease','address','doctorname','mobile','image']
+>>>>>>> 5acda11030eb4a47ec19200d275f46345ce53468

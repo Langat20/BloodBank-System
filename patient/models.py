@@ -11,6 +11,7 @@ class Patient(models.Model):
     disease=models.CharField(max_length=100)
     doctorname=models.CharField(max_length=50)
 <<<<<<< HEAD
+<<<<<<< HEAD
     emailaddress = models.CharField(max_length=40)
     mobile = models.CharField(max_length=20,null=False)
 =======
@@ -18,6 +19,11 @@ class Patient(models.Model):
     mobile = models.CharField(max_length=20,null=False)
 
 >>>>>>> 968e2f3ede6ecbc90af6a613fca2991231ab086a
+=======
+    address = models.CharField(max_length=40)
+    mobile = models.CharField(max_length=20,null=False)
+
+>>>>>>> 5acda11030eb4a47ec19200d275f46345ce53468
     @property
     def get_name(self):
         return self.user.first_name+" "+self.user.last_name
