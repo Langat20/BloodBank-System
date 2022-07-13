@@ -4,19 +4,21 @@ from . import models
 
 
 class DonorUserForm(forms.ModelForm):
+    email = forms.EmailField(required=True)
     class Meta:
         model=User
-        fields=['first_name','last_name','username','password']
+        fields=['first_name','last_name','username','email','password']
         widgets = {
         'password': forms.PasswordInput()
         }
 
 class DonorForm(forms.ModelForm):
+
     class Meta:
         model=models.Donor
-        fields=['bloodgroup','address','mobile','profile_pic']
+        fields=['bloodgroup','email','mobile','profile_pic']
 
 class DonationForm(forms.ModelForm):
     class Meta:
         model=models.BloodDonate
-        fields=['age','bloodgroup','unit']
+        fields=['age','disease','bloodgroup','unit']

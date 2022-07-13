@@ -12,7 +12,7 @@ class PatientUserForm(forms.ModelForm):
         }
 
 class PatientForm(forms.ModelForm):
-    
-    class Meta:
-        model=models.Patient
-        fields=['age','bloodgroup','disease','address','doctorname','mobile','image']
+
+        class Meta:
+                model=models.Patient
+                fields=['age','bloodgroup','disease','emailaddress','doctorname','mobile','image']
