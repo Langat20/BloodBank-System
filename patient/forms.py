@@ -15,4 +15,4 @@ class PatientForm(forms.ModelForm):
 
         class Meta:
                 model=models.Patient
-                fields=['age','bloodgroup','disease','emailaddress','doctorname','mobile','image']
+                fields=['age','bloodgroup','disease','email','doctorname','mobile','image']

@@ -28,8 +28,8 @@
                 <td>{{t.mobile}}</td>
                 
                 <td>
-                    <button class="btn btn-success btn-sm"><a  style="text-decoration: none;color: white;" href="{% url 'update-patient' t.id  %}">Edit</a> </button>
-                    <button class="btn btn-danger btn-sm"><a  style="text-decoration: none;color: white;" href="{% url 'delete-patient' t.id  %}">Delete</a> </button>
+                    <button class="btn btn-success btn-sm"><a  style="text-decoration: none;color: white;" href="{% url 'update-patient' t.id  %}">Edit</a></button>
+                    <button class="btn btn-danger btn-sm"><a  style="text-decoration: none;color: white;"  href="{% url 'delete-patient' t.id  %}">Delete</a></button>
                 </td>
             </tr>
             {% endfor %}
